@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#2196F3"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/userIV"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/salaar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:foreground="@drawable/salaar"
+            android:elevation="10dp"
+            />
+        <TextView
+            android:id="@+id/fromTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="amc theaters"
+            app:layout_constraintStart_toEndOf="@id/userIV"
+            app:layout_constraintTop_toTopOf="@id/userIV"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/subjectTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking confirmation"
+            app:layout_constraintStart_toEndOf="@id/userIV"
+            app:layout_constraintTop_toBottomOf="@id/fromTV"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/bodyTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your ticket is confirmed"
+            app:layout_constraintStart_toEndOf="@id/userIV"
+            app:layout_constraintTop_toBottomOf="@id/subjectTV"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/timeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:40pm"
+            android:layout_marginStart="170dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

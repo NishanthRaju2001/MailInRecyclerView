@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecuclerView</string>
+    <string name="ticket_confirmed">"We are thrilled to inform you that your tour ticket is confirmed! Thank you for choosing to explore with us. "</string>
+</resources>
